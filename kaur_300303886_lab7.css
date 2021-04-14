@@ -1,0 +1,20 @@
+button{
+    background-color:slategray;
+}
+fieldset{
+    background-color: lightsteelblue;
+    width:fit-content;
+    margin-bottom: 20px;
+}
+input{
+    margin:5px;
+    padding:5px;
+    
+}
+#inp1,#inp2{
+    width:75px;
+}
+legend{
+    background-color:lightslategray;
+    color: white;
+}

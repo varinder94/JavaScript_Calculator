@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="kaur_300303886_lab7.css" rel="stylesheet"/>
+    <title>Document</title>
+    <script>
+      
+function addValue(){
+    // get the operands value
+    var operand1 = document.getElementById("inp1").value;
+    var operand2 = document.getElementById("inp2").value;
+
+    // parse to integer
+    val1 = parseInt(operand1, 10);
+    val2 = parseInt(operand2, 10);
+
+    // perform operation
+    var result = val1 + val2;
+    var res=""+val1 +"+"+val2 +"="+result;
+    document.getElementById("outPlace").value = res;
+}
+function Mulitply(){
+    // get the operands value
+    var operand1 = document.getElementById("inp1").value;
+    var operand2 = document.getElementById("inp2").value;
+
+    // parse to integer
+    val1 = parseInt(operand1, 10);
+    val2 = parseInt(operand2, 10);
+
+    // perform operation
+    var result = val1 * val2;
+    var res=""+val1 +"*"+val2 +"="+result;
+    document.getElementById("outPlace").value = res;
+}
+function division(){
+    // get the operands value
+    var operand1 = document.getElementById("inp1").value;
+    var operand2 = document.getElementById("inp2").value;
+
+    // parse to integer
+    val1 = parseInt(operand1, 10);
+    val2 = parseInt(operand2, 10);
+
+    // perform operation
+    var result = val1 / val2;
+    var res=""+val1 +":"+val2 +"="+result;
+    document.getElementById("outPlace").value = res;
+}
+</script>
+</head>
+<body>
+    <header>
+        <h3>JavaScript CalCulator</h3>
+    </header>
+        <form name="SumMachine" action='' method='GET'>
+            <fieldset>
+                <legend>My calculator</legend>
+                <textarea name="output" id="outPlace" rows="3" cols="20" ></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input</legend>
+               Operands:  <input type="text" id="inp1" name="fname">
+                <input type="text" id="inp2" name="fname"><br>
+                
+               Operators: <input type="button" name="submit" value="+" onclick="addValue()">
+                <input type="button" name="submit" value="*" onclick="Mulitply()"> 
+                <input type="button" name="submit" value=":" onclick="division()"> 
+                <input type="reset" value="Reset">            
+               </fieldset>
+        
+                         
+        </form>
+</body>
+</html>
